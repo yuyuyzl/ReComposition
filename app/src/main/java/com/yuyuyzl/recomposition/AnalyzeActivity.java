@@ -12,7 +12,13 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.microsoft.projectoxford.vision.VisionServiceClient;
+import com.microsoft.projectoxford.vision.VisionServiceRestClient;
+import com.microsoft.projectoxford.vision.contract.AnalyzeResult;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 
 public class AnalyzeActivity extends Activity {
     private Uri mImageUri;
@@ -58,31 +64,72 @@ public class AnalyzeActivity extends Activity {
         @Override
         protected String doInBackground(String... params) {
 
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    mTextStatus.setText("Compressing Image...");
-                }
-            });
+            try {
+              runOnUiThread(new Runnable() {
+                  @Override
+                  public void run() {
+                      mTextStatus.setText("Compressing Image...");
+                  }
+              });
 
-            mBitmap = ImageHelper.loadSizeLimitedBitmapFromUri(
-                    mImageUri, getContentResolver());
-            if (mBitmap != null) {
-                // Show the image on screen.
-                //ImageView imageView = (ImageView) findViewById(R.id.selectedImage);
-                //imageView.setImageBitmap(mBitmap);
+              mBitmap = ImageHelper.loadSizeLimitedBitmapFromUri(
+                      mImageUri, getContentResolver());
+              if (mBitmap != null) {
+                  // Show the image on screen.
+                  //ImageView imageView = (ImageView) findViewById(R.id.selectedImage);
+                  //imageView.setImageBitmap(mBitmap);
 
-                // Add detection log.
-                Log.d("AnalyzeActivity", "Image: " + mImageUri + " resized to " + mBitmap.getWidth()
-                        + "x" + mBitmap.getHeight());
+                  // Add detection log.
+                  Log.d("AnalyzeActivity", "Image: " + mImageUri + " resized to " + mBitmap.getWidth()
+                          + "x" + mBitmap.getHeight());
+              }
+
+              runOnUiThread(new Runnable() {
+                  @Override
+                  public void run() {
+                      mTextStatus.setText("Initializing Project Oxford...");
+                  }
+              });
+
+              if (client == null) {
+                  client = new VisionServiceRestClient(getString(R.string.subscription_key));
+              }
+
+              runOnUiThread(new Runnable() {
+                  @Override
+                  public void run() {
+                      mTextStatus.setText("Analyzing Image...");
+                  }
+              });
+
+              Gson gson = new Gson();
+              String[] features = {"All"};
+
+              // Put the image into an input stream for detection.
+              ByteArrayOutputStream output = new ByteArrayOutputStream();
+              mBitmap.compress(Bitmap.CompressFormat.JPEG, 100, output);
+              ByteArrayInputStream inputStream = new ByteArrayInputStream(output.toByteArray());
+
+              AnalyzeResult visionAnalyzeResult = client.analyzeImage(inputStream, features);
+
+
+
+
+
+
+
+          } catch (final Exception e){
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mTextStatus.setText(e.getLocalizedMessage());
+                    }
+                });
             }
 
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    mTextStatus.setText("Connecting to Project Oxford...");
-                }
-            });
+
+
+
             return null;
         }
     }
