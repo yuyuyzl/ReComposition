@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ReComposition</string>
+
+    <string name="intro_text">动作和表情明明都很不错，为什么放到照片里就是呆呆的？</string>
+    <string name="intro_text1">构图这样的事情，我来帮你就好！</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_choose"></string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_analyze">Analyzing</string>
+</resources>
