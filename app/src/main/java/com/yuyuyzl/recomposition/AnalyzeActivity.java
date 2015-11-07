@@ -113,9 +113,12 @@ public class AnalyzeActivity extends Activity {
                 final AnalyzeResult visionAnalyzeResult = client.analyzeImage(inputStream, features);
 
 
-                int scoremax=0;
+                float scoremax=0;
                 for(int i=0;i<visionAnalyzeResult.categories.size();i++){
-                    if (visionAnalyzeResult.categories.get(i).score>scoremax)category=visionAnalyzeResult.categories.get(i).name;
+                    if (visionAnalyzeResult.categories.get(i).score>scoremax){
+                        category=visionAnalyzeResult.categories.get(i).name;
+                        scoremax=visionAnalyzeResult.categories.get(i).score;
+                    }
                 }
 
                 if (!category.endsWith("_"))subcategory =category.split("_")[1];
@@ -124,7 +127,7 @@ public class AnalyzeActivity extends Activity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        mTextStatus.setText("Detected category: "+category+"\n"+"Subcategory: "+subcategory+"\n"+gson.toJson(visionAnalyzeResult.categories));
+                        mTextStatus.setText("Detected category: "+category+"\n"+(subcategory==null?"":("Subcategory: "+subcategory+"\n"))+gson.toJson(visionAnalyzeResult.categories));
                     }
                 });
 
