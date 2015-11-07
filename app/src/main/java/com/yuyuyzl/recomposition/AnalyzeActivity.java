@@ -134,6 +134,7 @@ public class AnalyzeActivity extends Activity {
                     @Override
                     public void run() {
                         mTextStatus.setText(e.getLocalizedMessage());
+                        Log.e("ERROR-ANALYZING",e.getStackTrace().toString());
                     }
                 });
             }
