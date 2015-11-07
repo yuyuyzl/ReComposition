@@ -25,7 +25,8 @@ public class AnswerActivity extends Activity {
         textMain.setText(this.getIntent().getStringExtra("AnsString"));
         byte[] thumbnail=this.getIntent().getByteArrayExtra("thumbnail");
         imageThumbnail.setImageBitmap(BitmapFactory.decodeByteArray(thumbnail, 0, thumbnail.length));
-        //imagePicked.setImageURI(Uri.parse(this.getIntent().getStringExtra("original")));
+
+        imagePicked.setImageURI(this.getIntent().getData());
     }
 
     @Override

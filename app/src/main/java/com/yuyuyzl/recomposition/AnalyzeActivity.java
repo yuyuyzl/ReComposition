@@ -32,7 +32,8 @@ public class AnalyzeActivity extends Activity {
         Intent intent=new Intent(this,AnswerActivity.class);
         //ansString="建议你试着把人物的面部放到黄金分割线处以获取更加生动的效果。";
 
-        //intent.putExtra("original",this.getIntent().getData().toString());
+
+        intent.setData(this.getIntent().getData());
         intent.putExtra("AnsString", ansString);
         intent.putExtra("thumbnail",thumbnail);
         intent.putExtra("Category",ansCategory);
