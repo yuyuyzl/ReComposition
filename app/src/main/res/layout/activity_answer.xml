@@ -40,12 +40,17 @@
                 android:layout_alignWithParentIfMissing="false" />
         </LinearLayout>
 
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imagePicked"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true" />
 
         <TextView
             android:layout_width="wrap_content"

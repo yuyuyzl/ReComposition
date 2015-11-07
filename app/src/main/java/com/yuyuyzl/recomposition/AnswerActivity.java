@@ -1,7 +1,10 @@
 package com.yuyuyzl.recomposition;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -26,7 +29,16 @@ public class AnswerActivity extends Activity {
         byte[] thumbnail=this.getIntent().getByteArrayExtra("thumbnail");
         imageThumbnail.setImageBitmap(BitmapFactory.decodeByteArray(thumbnail, 0, thumbnail.length));
 
-        imagePicked.setImageURI(this.getIntent().getData());
+        Bitmap bitmap=ImageHelper.loadSizeLimitedBitmapFromUri(this.getIntent().getData(),this.getContentResolver());
+        Canvas canvas=new Canvas(bitmap);
+        Paint paint=new Paint();
+        paint.setAntiAlias(true);
+        paint.setARGB(255,128,128,128);
+        canvas.drawLine(bitmap.getWidth() * 0.666F, 0, bitmap.getWidth() * 0.666F, bitmap.getHeight(), paint);
+        canvas.drawLine(bitmap.getWidth()*0.333F,0,bitmap.getWidth() *0.333F,bitmap.getHeight(),paint);
+        canvas.drawLine(0,bitmap.getHeight()*0.666F,bitmap.getWidth(),bitmap.getHeight()*0.666F,paint);
+        canvas.drawLine(0,bitmap.getHeight()*0.333F,bitmap.getWidth(),bitmap.getHeight()*0.333F,paint);
+        imagePicked.setImageBitmap(bitmap);
     }
 
     @Override
