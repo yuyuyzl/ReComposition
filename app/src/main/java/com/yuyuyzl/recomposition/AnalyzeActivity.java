@@ -127,11 +127,14 @@ public class AnalyzeActivity extends Activity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        mTextStatus.setText("Detected category: "+category+"\n"+(subcategory==null?"":("Subcategory: "+subcategory+"\n"))+gson.toJson(visionAnalyzeResult.categories));
+                        //mTextStatus.setText("Detected category: "+category+"\n"+(subcategory==null?"":("Subcategory: "+subcategory+"\n"))+gson.toJson(visionAnalyzeResult.categories));
+                        mTextStatus.setText("Detected category: " + category + "\n" + (subcategory == null ? "" : ("Subcategory: " + subcategory + "\n")));
                     }
                 });
-
-
+                switch (category) {
+                    case "":break;
+                    default: break;
+                }
             } catch (final Exception e){
                 runOnUiThread(new Runnable() {
                     @Override

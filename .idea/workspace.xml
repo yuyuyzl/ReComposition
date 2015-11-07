@@ -11,10 +11,17 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f211e9d2-c242-440b-92e4-b50c3de822da" name="Default" comment="DDMS found（破事commit）">
+    <list default="true" id="f211e9d2-c242-440b-92e4-b50c3de822da" name="Default" comment="fixed more stupid bugs">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnswerActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_answer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/imagga.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_answer.xml" />
+      <change type="DELETED" beforePath="E:\hackathon\ReComposition\recomposition.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recomposition.iws" />
@@ -47,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -78,8 +85,8 @@
       <file leaf-file-name="AnalyzeActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63268894">
-              <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
+            <state vertical-scroll-proportion="-3.2407732">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2086#2277#0" expanded="true" />
@@ -89,9 +96,34 @@
                 <element signature="e#3189#3225#0" expanded="true" />
                 <element signature="e#3277#3468#0" expanded="true" />
                 <element signature="e#3467#3468#0" expanded="true" />
-                <element signature="e#4871#5308#0" expanded="true" />
-                <element signature="e#5307#5308#0" expanded="true" />
+                <element signature="e#4485#4953#0" expanded="true" />
+                <element signature="e#4952#4953#0" expanded="true" />
+                <element signature="e#5152#5589#0" expanded="true" />
+                <element signature="e#5588#5589#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnswerActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnswerActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_answer.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_answer.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.071429">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1290,7 +1322,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="E:\hackathon\recomposition" value="4340243427381" />
+        <entry key="E:\hackathon\recomposition" value="4340309382401" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1776,6 +1808,7 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.projectoxford/vision/0.5.0/eeec5827595dfa3a1ceaeb84d7cc1b4d03d0402a/vision-0.5.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.projectoxford/face/0.5.0/a10b243a72df075857c0424d8af87da3fe1b10b5/face-0.5.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar" />
+                            <option value="$MODULE_DIR$/libs/imagga.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1921,6 +1954,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/ChooseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/ImageHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_analyze.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_answer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java" />
       </list>
     </option>
@@ -1991,7 +2025,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs/imagga.jar" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="ExportApk.ApkPath" value="E:\hackathon\ReComposition\app" />
@@ -2003,8 +2037,8 @@
       <recent name="com.yuyuyzl.recomposition" />
     </key>
     <key name="android.template.parentActivityClass">
-      <recent name="com.yuyuyzl.recomposition.MainActivity" />
       <recent name="" />
+      <recent name="com.yuyuyzl.recomposition.MainActivity" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2242,7 +2276,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446874640241</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed more stupid bugs">
+      <created>1446875551548</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1446875551548</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2250,17 +2290,17 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.49786323" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.4957265" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265766" sideWeight="0.50427353" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265766" sideWeight="0.50641024" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.49786323" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265766" sideWeight="0.4957265" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265766" sideWeight="0.49358973" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2297,7 +2337,8 @@
     <MESSAGE value="split category string" />
     <MESSAGE value="DDMS found（破事commit）" />
     <MESSAGE value="fixed error when no subcategory" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error when no subcategory" />
+    <MESSAGE value="fixed more stupid bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed more stupid bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2345,8 +2386,10 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4871#5308#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
+            <element signature="e#4485#4953#0" expanded="true" />
+            <element signature="e#4952#4953#0" expanded="true" />
+            <element signature="e#5152#5589#0" expanded="true" />
+            <element signature="e#5588#5589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2423,8 +2466,10 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4871#5308#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
+            <element signature="e#4485#4953#0" expanded="true" />
+            <element signature="e#4952#4953#0" expanded="true" />
+            <element signature="e#5152#5589#0" expanded="true" />
+            <element signature="e#5588#5589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2493,8 +2538,10 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4871#5308#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
+            <element signature="e#4485#4953#0" expanded="true" />
+            <element signature="e#4952#4953#0" expanded="true" />
+            <element signature="e#5152#5589#0" expanded="true" />
+            <element signature="e#5588#5589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2563,8 +2610,10 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4871#5308#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
+            <element signature="e#4485#4953#0" expanded="true" />
+            <element signature="e#4952#4953#0" expanded="true" />
+            <element signature="e#5152#5589#0" expanded="true" />
+            <element signature="e#5588#5589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2597,7 +2646,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2655,15 +2704,34 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.071429">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_answer.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnswerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63268894">
-          <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
+        <state vertical-scroll-proportion="-3.2407732">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2086#2277#0" expanded="true" />
@@ -2673,8 +2741,10 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4871#5308#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
+            <element signature="e#4485#4953#0" expanded="true" />
+            <element signature="e#4952#4953#0" expanded="true" />
+            <element signature="e#5152#5589#0" expanded="true" />
+            <element signature="e#5588#5589#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -93,5 +93,6 @@
     <orderEntry type="library" exported="" name="gson-2.4" level="project" />
     <orderEntry type="library" exported="" name="vision-0.5.0" level="project" />
     <orderEntry type="library" exported="" name="face-0.5.0" level="project" />
+    <orderEntry type="library" exported="" name="imagga" level="project" />
   </component>
 </module>

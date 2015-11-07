@@ -38,6 +38,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.yuyuyzl.recomposition.MainActivity" />
         </activity>
+        <activity
+            android:name=".AnswerActivity"
+            android:label="@string/title_activity_answer" >
+        </activity>
     </application>
 
 </manifest>
