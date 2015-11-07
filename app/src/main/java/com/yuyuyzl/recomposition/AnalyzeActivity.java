@@ -38,6 +38,7 @@ public class AnalyzeActivity extends Activity {
         intent.putExtra("thumbnail",thumbnail);
         intent.putExtra("Category",ansCategory);
         startActivity(intent);
+        this.finish();
     }
 
     @Override
