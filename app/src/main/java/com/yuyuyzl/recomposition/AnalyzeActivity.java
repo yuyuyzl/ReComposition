@@ -60,8 +60,9 @@ public class AnalyzeActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
     private class doAnalyze extends AsyncTask<String,String,String>{
-
+        String category;
         @Override
+
         protected String doInBackground(String... params) {
 
             try {
@@ -110,9 +111,19 @@ public class AnalyzeActivity extends Activity {
               mBitmap.compress(Bitmap.CompressFormat.JPEG, 100, output);
               ByteArrayInputStream inputStream = new ByteArrayInputStream(output.toByteArray());
 
-              AnalyzeResult visionAnalyzeResult = client.analyzeImage(inputStream, features);
+              final AnalyzeResult visionAnalyzeResult = client.analyzeImage(inputStream, features);
 
 
+                int scoremax=0;
+                for(int i=0;i<visionAnalyzeResult.categories.size();i++){
+                    if (visionAnalyzeResult.categories.get(i).score>scoremax)category=visionAnalyzeResult.categories.get(i).name;
+                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mTextStatus.setText("Detected category: "+category);
+                    }
+                });
 
 
 
