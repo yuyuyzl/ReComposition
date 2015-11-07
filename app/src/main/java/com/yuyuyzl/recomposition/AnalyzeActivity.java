@@ -27,10 +27,12 @@ public class AnalyzeActivity extends Activity {
     private VisionServiceClient client;
     private String ansString,ansCategory;
 
-    Bitmap thumbnail;
+    private byte[] thumbnail;
     private void provideAnswer(){
         Intent intent=new Intent(this,AnswerActivity.class);
-        intent.setData(mImageUri);
+        //ansString="建议你试着把人物的面部放到黄金分割线处以获取更加生动的效果。";
+
+        //intent.putExtra("original",this.getIntent().getData().toString());
         intent.putExtra("AnsString", ansString);
         intent.putExtra("thumbnail",thumbnail);
         intent.putExtra("Category",ansCategory);
@@ -140,25 +142,27 @@ public class AnalyzeActivity extends Activity {
 
                 if (!category.endsWith("_"))subcategory =category.split("_")[1];
                 category=category.split("_")[0];
-                ansCategory=category.substring(0,1).toUpperCase();
+                ansCategory=" "+categoryHelper.toFirstUppercase(category)+(subcategory==null?"":", "+categoryHelper.toFirstUppercase(subcategory));
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         //mTextStatus.setText("Detected category: "+category+"\n"+(subcategory==null?"":("Subcategory: "+subcategory+"\n"))+gson.toJson(visionAnalyzeResult.categories));
                         //mTextStatus.setText("Detected category: " + category + "\n" + (subcategory == null ? "" : ("Subcategory: " + subcategory + "\n")));
-                        mTextStatus.setText("Calculating area of interests...");
+                        //mTextStatus.setText("Calculating area of interests...");
+                        mTextStatus.setText(ansCategory);
                     }
                 });
 
-
-                final byte[] thumbnailarray=client.getThumbnail(200, 200, true, inputStream);
-                thumbnail = BitmapFactory.decodeByteArray(thumbnailarray, 0, thumbnailarray.length);
+                inputStream.reset();
+                thumbnail=client.getThumbnail(200, 200, true, inputStream);
+                //thumbnail = BitmapFactory.decodeByteArray(thumbnailarray, 0, thumbnailarray.length);
 
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         mTextStatus.setText("Organizing my opinion...");
+                        //mTextStatus.setText(String.valueOf(thumbnail.length));
                     }
                 });
 

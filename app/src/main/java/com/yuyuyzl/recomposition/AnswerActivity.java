@@ -1,16 +1,31 @@
 package com.yuyuyzl.recomposition;
 
 import android.app.Activity;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class AnswerActivity extends Activity {
+    private TextView textCategory,textMain;
+    private ImageView imageThumbnail,imagePicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_answer);
+        textCategory= (TextView) findViewById(R.id.textCategory);
+        textMain= (TextView) findViewById(R.id.textMain);
+        imagePicked=(ImageView)findViewById(R.id.imagePicked);
+        imageThumbnail=(ImageView)findViewById(R.id.imageThumbnail);
+        textCategory.setText(this.getIntent().getStringExtra("Category"));
+        textMain.setText(this.getIntent().getStringExtra("AnsString"));
+        byte[] thumbnail=this.getIntent().getByteArrayExtra("thumbnail");
+        imageThumbnail.setImageBitmap(BitmapFactory.decodeByteArray(thumbnail, 0, thumbnail.length));
+        //imagePicked.setImageURI(Uri.parse(this.getIntent().getStringExtra("original")));
     }
 
     @Override

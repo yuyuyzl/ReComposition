@@ -14,8 +14,8 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:id="@+id/imageThumbnail"
         android:layout_below="@+id/imagePicked"
         android:layout_alignParentStart="true" />
@@ -26,7 +26,17 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Unknown"
         android:id="@+id/textCategory"
-        android:layout_below="@+id/imagePicked"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageThumbnail"
+        android:layout_alignParentBottom="false"
+        android:layout_alignBottom="@+id/imageThumbnail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main text"
+        android:id="@+id/textMain"
+        android:layout_below="@+id/textCategory"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
