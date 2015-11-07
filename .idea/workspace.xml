@@ -11,17 +11,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f211e9d2-c242-440b-92e4-b50c3de822da" name="Default" comment="fixed more stupid bugs">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnswerActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_answer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/imagga.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_answer.xml" />
-      <change type="DELETED" beforePath="E:\hackathon\ReComposition\recomposition.iml" afterPath="" />
+    <list default="true" id="f211e9d2-c242-440b-92e4-b50c3de822da" name="Default" comment="unused switch added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recomposition.iws" />
@@ -85,8 +76,8 @@
       <file leaf-file-name="AnalyzeActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2407732">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.50088185">
+              <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2086#2277#0" expanded="true" />
@@ -96,10 +87,8 @@
                 <element signature="e#3189#3225#0" expanded="true" />
                 <element signature="e#3277#3468#0" expanded="true" />
                 <element signature="e#3467#3468#0" expanded="true" />
-                <element signature="e#4485#4953#0" expanded="true" />
-                <element signature="e#4952#4953#0" expanded="true" />
-                <element signature="e#5152#5589#0" expanded="true" />
-                <element signature="e#5588#5589#0" expanded="true" />
+                <element signature="e#5158#5595#0" expanded="true" />
+                <element signature="e#5594#5595#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,6 +179,11 @@
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="imagga" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -2282,7 +2276,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446875551548</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="unused switch added">
+      <created>1446885986343</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1446885986343</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2293,14 +2293,14 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.4957265" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265766" sideWeight="0.50641024" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882884" sideWeight="0.50427353" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.49786323" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882884" sideWeight="0.4957265" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265766" sideWeight="0.49358973" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265766" sideWeight="0.49358973" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2338,7 +2338,8 @@
     <MESSAGE value="DDMS found（破事commit）" />
     <MESSAGE value="fixed error when no subcategory" />
     <MESSAGE value="fixed more stupid bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed more stupid bugs" />
+    <MESSAGE value="unused switch added" />
+    <option name="LAST_COMMIT_MESSAGE" value="unused switch added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2386,10 +2387,8 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4485#4953#0" expanded="true" />
-            <element signature="e#4952#4953#0" expanded="true" />
-            <element signature="e#5152#5589#0" expanded="true" />
-            <element signature="e#5588#5589#0" expanded="true" />
+            <element signature="e#5158#5595#0" expanded="true" />
+            <element signature="e#5594#5595#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2466,10 +2465,8 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4485#4953#0" expanded="true" />
-            <element signature="e#4952#4953#0" expanded="true" />
-            <element signature="e#5152#5589#0" expanded="true" />
-            <element signature="e#5588#5589#0" expanded="true" />
+            <element signature="e#5158#5595#0" expanded="true" />
+            <element signature="e#5594#5595#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2538,10 +2535,8 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4485#4953#0" expanded="true" />
-            <element signature="e#4952#4953#0" expanded="true" />
-            <element signature="e#5152#5589#0" expanded="true" />
-            <element signature="e#5588#5589#0" expanded="true" />
+            <element signature="e#5158#5595#0" expanded="true" />
+            <element signature="e#5594#5595#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2610,10 +2605,8 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4485#4953#0" expanded="true" />
-            <element signature="e#4952#4953#0" expanded="true" />
-            <element signature="e#5152#5589#0" expanded="true" />
-            <element signature="e#5588#5589#0" expanded="true" />
+            <element signature="e#5158#5595#0" expanded="true" />
+            <element signature="e#5594#5595#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2730,8 +2723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yuyuyzl/recomposition/AnalyzeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2407732">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.50088185">
+          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2086#2277#0" expanded="true" />
@@ -2741,10 +2734,8 @@
             <element signature="e#3189#3225#0" expanded="true" />
             <element signature="e#3277#3468#0" expanded="true" />
             <element signature="e#3467#3468#0" expanded="true" />
-            <element signature="e#4485#4953#0" expanded="true" />
-            <element signature="e#4952#4953#0" expanded="true" />
-            <element signature="e#5152#5589#0" expanded="true" />
-            <element signature="e#5588#5589#0" expanded="true" />
+            <element signature="e#5158#5595#0" expanded="true" />
+            <element signature="e#5594#5595#0" expanded="true" />
           </folding>
         </state>
       </provider>

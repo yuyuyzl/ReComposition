@@ -102,7 +102,7 @@ public class AnalyzeActivity extends Activity {
                     }
                 });
 
-
+/*
                 String[] features = {"All"};
 
               // Put the image into an input stream for detection.
@@ -134,7 +134,9 @@ public class AnalyzeActivity extends Activity {
                 switch (category) {
                     case "":break;
                     default: break;
-                }
+                }*/
+
+
             } catch (final Exception e){
                 runOnUiThread(new Runnable() {
                     @Override
