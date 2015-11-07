@@ -1,7 +1,9 @@
 package com.yuyuyzl.recomposition;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -23,6 +25,16 @@ public class AnalyzeActivity extends Activity {
     private Bitmap mBitmap;
     private TextView mTextStatus;
     private VisionServiceClient client;
+    private String ansString;
+    Bitmap thumbnail;
+    private void provideAnswer(){
+        Intent intent=new Intent(this,AnswerActivity.class);
+        intent.setData(mImageUri);
+        intent.putExtra("AnsString", ansString);
+        intent.putExtra("thumbnail",thumbnail);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +71,10 @@ public class AnalyzeActivity extends Activity {
     }
     private class doAnalyze extends AsyncTask<String,String,String>{
         String category, subcategory;
-        Gson gson = new Gson();
+        //Gson gson = new Gson();
+
+
+
         @Override
 
         protected String doInBackground(String... params) {
@@ -102,7 +117,7 @@ public class AnalyzeActivity extends Activity {
                     }
                 });
 
-/*
+
                 String[] features = {"All"};
 
               // Put the image into an input stream for detection.
@@ -128,13 +143,25 @@ public class AnalyzeActivity extends Activity {
                     @Override
                     public void run() {
                         //mTextStatus.setText("Detected category: "+category+"\n"+(subcategory==null?"":("Subcategory: "+subcategory+"\n"))+gson.toJson(visionAnalyzeResult.categories));
-                        mTextStatus.setText("Detected category: " + category + "\n" + (subcategory == null ? "" : ("Subcategory: " + subcategory + "\n")));
+                        //mTextStatus.setText("Detected category: " + category + "\n" + (subcategory == null ? "" : ("Subcategory: " + subcategory + "\n")));
+                        mTextStatus.setText("Calculating area of interests...");
                     }
                 });
+
+
+                final byte[] thumbnailarray=client.getThumbnail(200, 200, true, inputStream);
+                thumbnail = BitmapFactory.decodeByteArray(thumbnailarray, 0, thumbnailarray.length);
+
+
                 switch (category) {
-                    case "":break;
-                    default: break;
-                }*/
+                    case "people":
+
+
+
+                    default:
+                        provideAnswer();
+                        break;
+                }
 
 
             } catch (final Exception e){
