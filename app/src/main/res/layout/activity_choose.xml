@@ -13,14 +13,9 @@
         android:layout_alignParentStart="false"
         android:layout_alignParentEnd="false">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"></RelativeLayout>
-
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:text="选取照片"
             android:id="@+id/button3"
             android:layout_below="@+id/button2"
@@ -28,24 +23,22 @@
             android:layout_weight="1"
             android:onClick="selectImageInAlbum" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"></RelativeLayout>
-
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="80dp"
-            android:text="直接拍摄"
+            android:layout_height="50dp"
+            android:text="拍摄照片"
             android:id="@+id/button2"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_weight="1"
             android:onClick="takePhoto" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"></RelativeLayout>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="即时拍摄"
+            android:id="@+id/button4"
+            android:layout_weight="2" />
+
     </LinearLayout>
 </RelativeLayout>
