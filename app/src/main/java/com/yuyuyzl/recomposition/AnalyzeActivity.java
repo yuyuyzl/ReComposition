@@ -25,13 +25,15 @@ public class AnalyzeActivity extends Activity {
     private Bitmap mBitmap;
     private TextView mTextStatus;
     private VisionServiceClient client;
-    private String ansString;
+    private String ansString,ansCategory;
+
     Bitmap thumbnail;
     private void provideAnswer(){
         Intent intent=new Intent(this,AnswerActivity.class);
         intent.setData(mImageUri);
         intent.putExtra("AnsString", ansString);
         intent.putExtra("thumbnail",thumbnail);
+        intent.putExtra("Category",ansCategory);
         startActivity(intent);
     }
 
@@ -138,7 +140,7 @@ public class AnalyzeActivity extends Activity {
 
                 if (!category.endsWith("_"))subcategory =category.split("_")[1];
                 category=category.split("_")[0];
-
+                ansCategory=category.substring(0,1).toUpperCase();
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -153,12 +155,21 @@ public class AnalyzeActivity extends Activity {
                 thumbnail = BitmapFactory.decodeByteArray(thumbnailarray, 0, thumbnailarray.length);
 
 
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mTextStatus.setText("Organizing my opinion...");
+                    }
+                });
+
                 switch (category) {
                     case "people":
 
 
 
                     default:
+
+
                         provideAnswer();
                         break;
                 }
