@@ -118,7 +118,7 @@ public class AnalyzeActivity extends Activity {
                     if (visionAnalyzeResult.categories.get(i).score>scoremax)category=visionAnalyzeResult.categories.get(i).name;
                 }
 
-                subcategory =category.split("_")[1];
+                if (!category.endsWith("_"))subcategory =category.split("_")[1];
                 category=category.split("_")[0];
 
                 runOnUiThread(new Runnable() {
@@ -134,7 +134,12 @@ public class AnalyzeActivity extends Activity {
                     @Override
                     public void run() {
                         mTextStatus.setText(e.getLocalizedMessage());
-                        Log.e("ERROR-ANALYZING",e.getStackTrace().toString());
+
+                        Log.e("ERROR-ANALYZING",e.getLocalizedMessage());
+                        for(StackTraceElement ei:e.getStackTrace()) {
+
+                            Log.e("ERROR-ANALYZING", ei.toString());
+                        }
                     }
                 });
             }
