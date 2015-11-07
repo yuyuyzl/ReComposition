@@ -25,7 +25,7 @@ public class AnalyzeActivity extends Activity {
     private Bitmap mBitmap;
     private TextView mTextStatus;
     private VisionServiceClient client;
-    private String ansString,ansCategory;
+    private String ansString="",ansCategory;
 
     private byte[] thumbnail;
     private void provideAnswer(){
@@ -168,12 +168,22 @@ public class AnalyzeActivity extends Activity {
                 });
 
                 switch (category) {
+                    case "abstract":
+                        ansString+="    我有点看不清楚，这是一幅抽象画吗？\n";
+                        break;
+                    case "outdoors":
+                    case "building":
+                    case "dark":
+                    case "trans":
+                    case "sky":
+                        ansString+="    把分割画面的长直线放在三等分线上有奇效。\n";
                     case "people":
-
-
-
+                    case "food":
+                    case "animal":
+                    case "plant":
+                    case "text":
                     default:
-
+                        ansString+="    如果可行，把被摄主体放在三等分线上可以使画面更生动活泼。\n";
 
                         provideAnswer();
                         break;
